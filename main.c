@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "aes.h"
+#include "params.h"
+
+int main()
+{
+    unsigned char plaintext[STATE_BYTES] = {
+        0x32, 0x43, 0xF6, 0xA8,
+        0x88, 0x5A, 0x30, 0x8D,
+        0x31, 0x31, 0x98, 0xA2,
+        0xE0, 0x37, 0x07, 0x34
+    };
+
+    unsigned char key[16] = {
+        0x2B, 0x7E, 0x15, 0x16,
+        0x28, 0xAE, 0xD2, 0xA6,
+        0xAB, 0xF7, 0x15, 0x88,
+        0x09, 0xCF, 0x4F, 0x3C
+    };
+
+    unsigned char ciphertext[STATE_BYTES];
+
+    aes_encryption_block(ciphertext, plaintext, key);
+    aes_decryption_block(plaintext, key, ciphertext);
+
+
+    return 0;
+}

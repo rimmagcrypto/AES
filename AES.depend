@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1759909025 source:c:\users\dell\documents\m2 crypto\c++\aes\aes.c
+	<stdio.h>
+	<string.h>
+	"gf.h"
+	"params.h"
+	"aes_functions.h"
+
+1759855672 c:\users\dell\documents\m2 crypto\c++\aes\params.h
+
+1759908889 source:c:\users\dell\documents\m2 crypto\c++\aes\main.c
+	<stdio.h>
+	<stdlib.h>
+	"aes.h"
+	"params.h"
+
+1759908801 c:\users\dell\documents\m2 crypto\c++\aes\aes.h
+
+1759864550 source:c:\users\dell\documents\m2 crypto\c++\aes\gf.c
+
+1759864276 c:\users\dell\documents\m2 crypto\c++\aes\gf.h
+
+1759909129 c:\users\dell\documents\m2 crypto\c++\aes\aes_functions.h
+
+1759877926 source:c:\users\dell\documents\m2 crypto\c++\aes\aes_functions.c
+	<string.h>
+	"aes_functions.h"
+	"params.h"
+	"gf.h"
+
